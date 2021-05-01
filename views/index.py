@@ -6,7 +6,9 @@ import requests
 import json
 import pusher
 
-app = Flask(__name__)
+template_dir = os.path.abspath('templates')
+static_dir = os.path.abspath('static')
+app = Flask(__name__, template_folder=template_dir, static_folder=static_dir)
 
 @app.route('/send_message', methods=['POST'])
 def send_message():
@@ -15,7 +17,7 @@ def send_message():
     fulfillment_text = detect_intent_texts(project_id, "unique", message, 'en')
     response_text = { "message":  fulfillment_text }
     return jsonify(response_text)
-    
+
 @app.route('/webhook', methods=['POST'])
 def webhook():
     data = request.get_json(silent=True)
