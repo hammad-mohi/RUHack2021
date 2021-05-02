@@ -30,6 +30,10 @@
 ## Architecture 
 <img src="Architecture.png">
 
+## Sample Conversation
+<img src="SampleConversation.jpg">
+
+
 # Devpost Submission
 
 * Project name
