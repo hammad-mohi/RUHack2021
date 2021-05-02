@@ -1,4 +1,4 @@
-<img src="EDUBOT Logo.png" width="200" height="200">
+<img src="EDUBOT Logo.png" >
 
 ## EDUBOT Application
 * EDUBot is an educational chatbot that helps students navigate through everything in their canvas classroom. This includes having the ability to search for a phrase through all the lecture notes, whether they’re handwritten notes or a pdf uploaded by the prof. The student also has the ability to pull the latest announcements, discussion posts, lecture notes, and grades using the power of natural language processing!
@@ -28,7 +28,7 @@
 6. Run “flask run” and start talking!
 
 ## Architecture 
-<img src="Architecture.png" width="400" height="400">
+<img src="Architecture.png">
 
 # Devpost Submission
 
@@ -48,14 +48,14 @@ Be sure to write what inspired you, what you learned, how you built your project
 
 ## How we built the project
 
-##Description
+## Description
 This Educational Chatbot uses Google Dialogflow to help students find the right Lecture Notes, Grades, Assignment, Announcements and Discussions with a phrase input. 
 
-# Tools and Technologies 
+<b> Tools and Technologies </b>
 * Web Framework used: Flask 
 * Machine Learning: Natural Language Processing, Google Vision
 
-# External API's
+<b>External API's </b>
 * Google DialogFlow API for NLP Chatbot
 * Google Vision API for converting handwriting/pdf to text
 * Canvas API to pull course data from
