@@ -12,6 +12,7 @@ function submit_message(message) {
       $( "#loading" ).remove();
     }
 }
+
 $('#target').on('submit', function(e){
     e.preventDefault();
     const input_message = $('#input_message').val()
@@ -26,16 +27,43 @@ $('#target').on('submit', function(e){
         </div>
     `)
 
-    // loading 
+    // loading
     $('.chat-container').append(`
         <div class="chat-message text-center col-md-2 offset-md-10 bot-message" id="loading">
             <b>...</b>
         </div>
     `)
 
-    // clear the text input 
+    // clear the text input
     $('#input_message').val('')
+
+    window.scrollTo(0,document.body.scrollHeight);
 
     // send the message
     submit_message(input_message)
+});
+
+let menuIcon = document.querySelector('.menuIcon');
+let nav = document.querySelector('.overlay-menu');
+
+menuIcon.addEventListener('click', () => {
+    if (nav.style.transform != 'translateX(0%)') {
+        nav.style.transform = 'translateX(0%)';
+        nav.style.transition = 'transform 0.2s ease-out';
+    } else {
+        nav.style.transform = 'translateX(-100%)';
+        nav.style.transition = 'transform 0.2s ease-out';
+    }
+});
+
+
+// Toggle Menu Icon ========================================
+let toggleIcon = document.querySelector('.menuIcon');
+
+toggleIcon.addEventListener('click', () => {
+    if (toggleIcon.className != 'menuIcon toggle') {
+        toggleIcon.className += ' toggle';
+    } else {
+        toggleIcon.className = 'menuIcon';
+    }
 });

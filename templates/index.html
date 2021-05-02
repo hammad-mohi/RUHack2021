@@ -1,35 +1,70 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-      <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <title>Travel Assistance</title>
-  </head>
-  <body>
-      <div class="container h-100">
-        <div class="row align-items-center h-100">
-            <div class="col-md-8 col-sm-12 mx-auto">
-                <div class="h-100 justify-content-center">
-                    <div class="chat-container" style="overflow: auto; max-height: 80vh">
-                        <!-- chat messages -->
-                        <div class="chat-message col-md-5 offset-md-7 bot-message">
-                          Welcome to Travel portal. How can I help you?
-                        </div>
-                    </div>
-                    <form id="target">
-                       <input class="input" type="text" value="" placeholder="Enter message..." id="input_message"/>
-                       <input type="submit" hidden>
-                    </form>
-                </div>
-            </div>
-        </div>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" />
+  <!-- Font Awesome CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  <title>EDUBot</title>
+</head>
+<nav id="navbar" class="">
+  <div class="nav-wrapper">
+    <!-- Navbar Logo -->
+    <div class="logo">
+      <!-- Logo Placeholder -->
+      <a href="#home"><i class="fa fa-angellist"></i> EDUBot</a>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-    <script src="{{ url_for('static', filename='custom.js')}}"></script>
-  </body>
+
+    <!-- Navbar Links -->
+    <ul id="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+<!-- Menu Icon -->
+<div class="menuIcon">
+  <span class="icon icon-bars"></span>
+  <span class="icon icon-bars overlay"></span>
+</div>
+
+<div class="overlay-menu">
+  <ul id="menu">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div>
+
+<body>
+  <div class="container mx-auto">
+    <div class="chat-container">
+      <!-- Chat Messages -->
+      <div class="chat-message col-md-5 offset-md-7 bot-message">
+        Welcome to EDUBot. How can I help you?
+      </div>
+    </div>
+    <form id="target">
+      <div class="input-group mb-3 mt-2">
+        <input type="text" class="form-control" placeholder="Enter message..." aria-label="Enter message..." aria-describedby="basic-addon2" id="input_message" >
+        <div class="input-group-append">
+          <button type="submit" class="btn btn-primary"><i class="fa fas fa-paper-plane"></i></button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="{{ url_for('static', filename='custom.js')}}"></script>
+</body>
+
 </html>
