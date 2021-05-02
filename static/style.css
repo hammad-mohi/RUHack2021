@@ -26,8 +26,9 @@
                             Navbar
     ======================================================*/
   #navbar {
-    background: white;
-    color: rgb(13, 26, 38);
+    background: rgb(25, 25, 25);
+    /* color: rgb(13, 26, 38); */
+    color: white;
     top: 0;
     height: 60px;
     line-height: 60px;
@@ -50,18 +51,34 @@
       }
 
 
-  .logo {
+  .logo a {
     float: left;
     margin-left: 28px;
     font-size: 1.5em;
     height: 60px;
     letter-spacing: 1px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
+    -webkit-transition: all 0.5s ease;
+    text-decoration: none;
   } @media(max-width: 768px) {
       .logo {
   /*       margin-left: 5px; */
       }
     }
+
+  .logo a:hover {
+    color: rgb(28, 184, 93);
+  }
+
+  .logo a:hover::before {
+    transition: transform 0.5s ease-in;
+    -webkit-transition: transform 0.5s ease-in;
+  }
+
+  .logo a:hover::after {
+    transition: transform 0.5s ease-out;
+    -webkit-transition: transform 0.5s ease-out;
+  }
 
   #navbar ul {
     display: inline-block;
@@ -87,9 +104,10 @@
   }
 
   #navbar li a {
-    color: rgb(13, 26, 38);
+    /* color: rgb(13, 26, 38); */
+    color: white;
     display: block;
-    font-size: 0.7em;
+    font-size: 0.8em;
     height: 50px;
     letter-spacing: 1px;
     margin: 0 20px;
@@ -103,9 +121,9 @@
 
   #navbar li a:hover {
     /* border-bottom: 1px solid rgb(28, 121, 184); */
-    color: rgb(28, 121, 184);
-    transition: all 1s ease;
-    -webkit-transition: all 1s ease;
+    color: rgb(28, 184, 93);
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
   }
 
   /* Animated Bottom Line */
@@ -115,7 +133,7 @@
     width: 0%;
     height: 1px;
     bottom: -1px;
-    background: rgb(13, 26, 38);
+    background: rgb(28, 184, 93);;
   }
 
   #navbar li a:before {
@@ -124,13 +142,14 @@
   }
 
   #navbar li a:after {
-    background: rgb(13, 26, 38);
+    background: rgb(28, 184, 93);;
+
     right: 0;
     /* transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1); */
   }
 
   #navbar li a:hover:before {
-    background: rgb(13, 26, 38);
+    background: rgb(28, 184, 93);;
     width: 100%;
     transition: width 0.5s cubic-bezier((0.22, 0.61, 0.36, 1));
   }
@@ -332,11 +351,12 @@
     ======================================================*/
   .container {
     padding-top: 2%;
-    padding-bottom: 2%;
+    padding-bottom: 1px;
+    width: 75%;
   }
 
   .chat-container {
-    height: 95%;
+    /* min-height: 78vh; */
     z-index: -1;
   }
 
@@ -348,6 +368,9 @@
     padding: 15px;
     border-radius: 25px;
     margin-bottom: 3px;
+    -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+    -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+    box-shadow: 1px 2px 3px rgba(0,0,0,.5);
   }
 
   .bot-message {
@@ -375,7 +398,7 @@
                         Gradient Background
     ======================================================*/
 
-  /* body {
+  body {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
@@ -391,4 +414,4 @@
     100% {
       background-position: 0% 50%;
     }
-  } */
+  }
