@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "ruhacks2021-uw9e",
+  "private_key_id": "e3630c9c1cc72eedb519ab0888f070090355e338",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC9P5Tv+6ZA55gi\nBBDkKrpcp34TWU94ySxS954Xb9qFB/Pu7GzggeKEUUSIOfhmpo4FnUrcXpPGI3AM\nTI2n8rJuQY/GLt3CRFM9LIRNIjUsNNEP72WcgOGw/gxJswBBibN1WNwi3ZDXD7yj\n7MhehVCmoFisIHRFhUzmMH8iJEGEhnHS1EVsq8Xuz2tBEGAyKqUvzTZmf9k4GLYQ\n5Rr1yCVQcXG2Yud4FxfbZ5abIX7OqQHKJxXVHeQYZYFtPUrgCCW7Xypd/45cy/h6\nTw+q5pmtHGHQ+A5kAmcibwSE4iQ4cLHgMuF1/aw0ggZybJtAWDRuDG/tgU9n1rRV\nJqygD/zlAgMBAAECggEALBNkXTYnZONrd7SpuHJJIC40O05oJ3H3HEWmcL/wzV3q\nTqGKxAkMGBQTWYTi2Ql+d0lId6WhVhrHzF2B+nUYYHxtf1NH+6hNGKjHEW3fo3GT\npVn0uOv9ZGrusrV5YEoxXSm6b3ZZ9vSn0yfhDL6Q55XdwQz3938Rx2TRH0MBbVs6\nHSGVCWZjHX1geNbOoVOg0R7kREq42mPcxe7/1ZTjVNKn9qSghyhmVlwgTxFsdTSH\n0JGb9MkAzacbRXZ+L/7FF2Zj/FE8RQOR6NOZpGlSzhetxjLTzVwMdW9cOi/1tIXA\n5ILNTzPIOI6++eID9hdEp+qDGv8DCQdN2Oxt37W7ewKBgQDcw2+mYBm2xgaxBcJq\nnKJvmm44OozwS3vV7qHRgBxW9ToUsp378BvdRlOn12WpDcxFmaQD/LhzUGVjBRK4\nBmuPa/h85Cecvdpmj35ZOwNH0XH25bVCCbuDOVTPCzQ8p2ONpP9Udgia0Fgd7SJK\ndJOo2gPyrrjEYDW9M3tC6ZdgCwKBgQDbdGqH1j9H02GJw+ZTTdPIHdmbUpVcg+jk\nXSLyKxC7uBMqG0g3kiExQthdK/FhF+JYU74w0zS7qnD2WqbpHgI9s1zcCj8/7whl\n5HM79YUOqY0V6XbxSBLIWJKHXS40PYKwlWgRKdXl/Og+xMoUR9oRaFsf7OzrzcSX\nW/+C5ux8zwKBgQC6OBlMLLBEHtKyLHuM1semgIwM3kbYw7OYCA1z3S8Koxz1LJ5b\nUHUQuCwE3osgiUUQSMOzoVAt5VlAp5zcon3Eo30eTI6lhvhdnxkjR8ZCpIgPjkDR\njcggrxG8/GR57XDqoI3IvzAO90P9KnTMfX245v6BjaTJ8aYjDPQiw0wvdQKBgQCg\nEIx3IVysjdARxNIlJpn211bVxGluvkPK9Oe9TI367WsFBjspVStim8fmRVvcnqgY\nFpSdVh+bVdjoxvwBAkNOL5nmYI77meQ9NWCbdhujsyVVuyBnIlOYz4mos900ezzs\ngT0Tb7k087+NsMlX+4RhuATnB09TOpVOdOqr1rTc3wKBgHynW5SOmq5kDjFgtO4L\nzPpGI3rMFcTTdX95QlvXKXTugyK2uYR52qEA7aG0rICZ/ZQvQXxBxiG7MHkiAA4x\naSCEUO7Gf8LObuNiSu1n0rdALrfGYcK+Ghpgz1L5Aqx2Dp027WfORTUyiynvWAjM\neoyIdt91r6EL7X5Ft3HCIRqN\n-----END PRIVATE KEY-----\n",
+  "client_email": "ruhackvisionapi@ruhacks2021-uw9e.iam.gserviceaccount.com",
+  "client_id": "115240271575569727205",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ruhackvisionapi%40ruhacks2021-uw9e.iam.gserviceaccount.com"
+}
