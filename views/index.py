@@ -6,21 +6,16 @@ import requests
 import json
 import pusher
 
+
 template_dir = os.path.abspath('templates')
 static_dir = os.path.abspath('static')
 app = Flask(__name__, template_folder=template_dir, static_folder=static_dir)
 
-@app.route('/send_message', methods=['POST'])
-def send_message():
-    message = request.form['message']
-    project_id = os.getenv('DIALOGFLOW_PROJECT_ID')
-    fulfillment_text = detect_intent_texts(project_id, "unique", message, 'en')
-    response_text = { "message":  fulfillment_text }
-    return jsonify(response_text)
-
 @app.route('/webhook', methods=['POST'])
 def webhook():
+
     data = request.get_json(silent=True)
+
     if data['queryResult']['queryText'] == 'yes':
         reply = {
             "fulfillmentText": "Ok. Tickets booked successfully.",
@@ -52,3 +47,13 @@ def detect_intent_texts(project_id, session_id, text, language_code):
         response = session_client.detect_intent(
             session=session, query_input=query_input)
         return response.query_result.fulfillment_text
+
+
+@app.route('/send_message', methods=['POST'])
+def send_message():
+    message = request.form['message']
+    project_id = os.getenv('DIALOGFLOW_PROJECT_ID')
+    fulfillment_text = detect_intent_texts(project_id, "unique", message, 'en')
+    response_text = { "message":  fulfillment_text }
+   
+    return jsonify(response_text)
