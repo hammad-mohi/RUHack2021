@@ -69,3 +69,4 @@ This Educational Chatbot uses Google Dialogflow to help students find the right 
 - Handwriting conversion is difficult to find. A nice good one, after multiple attempts we settled on google vision API. 
 - Combining all different aspects of the project together from different developers with different styles is very difficult. Lots of modifications need to be made, and the difficulty was multiplied due to the fact that we’re virtual. 
 
+# EDUBot
