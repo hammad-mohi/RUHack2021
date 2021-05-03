@@ -2,7 +2,7 @@
 
 ## EDUBOT Application
 * EDUBot is an educational chatbot that helps students navigate through everything in their canvas classroom. This includes having the ability to search for a phrase through all the lecture notes, whether they’re handwritten notes or a pdf uploaded by the prof. The student also has the ability to pull the latest announcements, discussion posts, lecture notes, and grades using the power of natural language processing!
-* Firstly, clone this entire repository. Then, follow either the project setup instructions below
+* Firstly, clone this entire repository. Then, follow either the project setup instructions below.
 
 ## Team Members
 * Wrichiek Kar
